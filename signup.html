@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>Signup</title>
+</head>
+
+<body class="bg-[#f5ded0] min-h-screen flex items-center justify-center">
+    <div class="grid grid-cols-2 w-[55vw] h-[65vh]">
+
+        <!-- left side -->
+        <div class="bg-[#3B1F0A] p-2 text-white">
+            <div class="px-20 pt-20 pb-5 flex justify-center items-center text-4xl">
+                WELCOME
+            </div>
+            <div class="flex flex-col items-center justify-center text-xl">
+                <span>Join the COOFFEE family</span>
+                <span>your perfect cup awaits</span>
+            </div>
+            <img src="/coffee-cup.gif" alt="coffee">
+        </div>
+
+        <!-- right side -->
+        <div class="bg-[#946141] p-2 flex flex-col gap-4">
+            <div class="px-20 pt-5 pb-5 flex justify-center items-center text-4xl text-white">
+                Signup
+            </div>
+            <!-- Username -->
+            <div class="flex flex-col gap-1.5 mx-auto">
+                <label for="username" class="ml-2 text-white text-xl">Username</label>
+                <input type="text" placeholder="Enter  your username" id="username"
+                    class="mx-auto border-3 border-amber-950 focus:outline-none text-white p-1.5 w-96 rounded-2xl ">
+            </div>
+            <!-- password -->
+            <div class="flex flex-col gap-1.5 mx-auto">
+                <label for="password" class="ml-2 text-white text-xl">Password</label>
+                <input type="password" placeholder="Enter your password" id="password"
+                    class="border-3 border-amber-950 focus:outline-none text-white p-1.5 w-96 rounded-2xl">
+            </div>
+             <!-- confirm password -->
+            <div class="flex flex-col gap-1.5 mx-auto">
+                <label for="password" class="ml-2 text-white text-xl">Confirm Password</label>
+                <input type="password" placeholder="Enter your password" id="password"
+                    class="border-3 border-amber-950 focus:outline-none text-white p-1.5 w-96 rounded-2xl">
+            </div>
+            <!-- create account button -->
+            <div class="flex justify-center mx-auto">
+                <button
+                    class="bg-[#3B1F0A] hover:bg-[#774118] text-white px-4 py-2 cursor-pointer w-96 rounded-2xl flex justify-center text-xl active:scale-90 transition-all ">
+                    Create Account
+                </button>
+            </div>
+            <div class="text-white flex flex-col gap-1 mx-auto text-xl">Already have an account?
+                    <a href="/index.html"  class="bg-[#3B1F0A] hover:bg-[#774118] hover:underline text-white px-4 py-2  w-96 rounded-2xl active:scale-95 transition-all cursor-pointer text-center">Login</a>
+            </div>
+        </div>
+
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
