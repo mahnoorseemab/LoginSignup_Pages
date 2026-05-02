@@ -10,54 +10,52 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,700;1,700&display=swap"
     rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
   <title>Login</title>
 </head>
 
 <body class="bg-[#f5ded0] min-h-screen flex items-center justify-center">
-  <div class="grid grid-cols-2 w-[55vw] h-[65vh]">
-
+  <div class="grid grid-cols-1 w-[80vw] md:grid-cols-2 md:w-[55vw] h-[65vh]">
     <!-- left side -->
-    <div class="bg-[#3B1F0A] p-2 text-white">
-      <div class="px-20 pt-20 pb-5 flex justify-center items-center text-4xl">
+    <div class="bg-[#3B1F0A] p-2 text-white flex flex-col justify-center items-center">
+      <div class=" heading-font md:px-0 pt-20 pb-5 flex justify-center items-center text-4xl px-40">
         WELCOME BACK!
       </div>
-      <div class="flex flex-col items-center justify-center text-xl">
-        <span>Your daily dose of COFFEE</span>
-        <span>just a LOGIN away</span>
+      <div class="flex flex-col items-center justify-center text-3xl">
+        <span class="special-font">Your daily dose of coffee</span>
+        <span class=" special-font">just a login away</span>
       </div>
-      <img src="/coffee-cup.gif" class="opacity-10" alt="coffee">
+      <img src="/coffee-cup.gif" class="opacity-25 size-80" alt="coffee">
     </div>
 
     <!-- right side -->
     <div class="bg-[#946141]  p-2 flex flex-col gap-4">
-      <div class="px-20 pt-10 pb-5 flex justify-center items-center text-4xl text-white">
+      <div class=" heading-font px-20 pt-10 pb-5 flex justify-center items-center text-4xl text-white">
         LOGIN
       </div>
       <!-- Username -->
       <div class="flex flex-col gap-1.5 mx-auto">
         <label for="username" class="ml-2 text-white text-xl">Username</label>
         <input type="text" placeholder="Enter  your username" id="username"
-          class="mx-auto border-3 border-amber-950 focus:outline-none text-white p-1.5 w-full md:w-96 rounded-2xl ">
+          class="mx-auto border-3 border-amber-950 focus:outline-none text-white p-2 w-full md:w-96 rounded-2xl text-xl">
       </div>
       <!-- password -->
       <div class="flex flex-col gap-1.5 mx-auto">
         <label for="password" class="ml-2 text-white text-xl">Password</label>
         <input type="password" placeholder="Enter your password" id="password"
-          class="border-3 border-amber-950 focus:outline-none text-white p-1.5 w-full md:w-96 rounded-2xl">
+          class="border-3 border-amber-950 focus:outline-none text-white p-2 w-full md:w-96 rounded-2xl text-xl">
         <a href="/forgot password" class="text-white hover:underline hover:text-[#3B1F0A]">Forgot Password?</a>
       </div>
       <!-- login button -->
-      <div class="flex justify-center mx-auto">
-        <button
-          class="bg-[#3B1F0A] hover:bg-[#774118] text-white px-4 py-2 active:scale-95 transition-all duration-100 cursor-pointer w-full md:w-96 rounded-2xl flex justify-center text-xl">
+      <div class="flex justify-center mx-auto bg-[#3B1F0A] hover:bg-[#774118] text-white px-4 py-2 active:scale-95 transition-all duration-100 cursor-pointer w-65 md:w-96 rounded-2xl text-xl">
           Login
-        </button>
       </div>
       <div class="text-white flex flex-col gap-1 mx-auto text-xl">Don't have an account?
-          <a href="/Signup" class="bg-[#3B1F0A] hover:bg-[#774118] hover:underline text-white px-4 py-2  w-full md:w-96 rounded-2xl active:scale-95 transition-all cursor-pointer text-center">Signup</a>
+        <a href="/Signup"
+          class="bg-[#3B1F0A] hover:bg-[#774118] hover:underline text-white px-4 py-2  w-65 md:w-96 rounded-2xl active:scale-95 transition-all cursor-pointer text-center">Signup</a>
       </div>
     </div>
-
   </div>
 
   <script type="module" src="/src/main.js"></script>
